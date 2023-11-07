@@ -58,7 +58,6 @@ const textToMorseCode = () => {
         inputText.charAt(i) !== " "
       ) {
         output += morseAlphabet[j].morseCode + " ";
-        console.log(outputText);
       }
     }
     if (inputText.charAt(i) === " ") {
