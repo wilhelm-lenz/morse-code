@@ -57,12 +57,12 @@ const textToMorseCode = () => {
           morseAlphabet[j].letter.toLowerCase() &&
         inputText.charAt(i) !== " "
       ) {
-        output += morseAlphabet[j].morseCode;
+        output += morseAlphabet[j].morseCode + " ";
         console.log(outputText);
       }
     }
     if (inputText.charAt(i) === " ") {
-      output += "/";
+      output += "/ ";
     }
   }
   outputText.textContent = output;
