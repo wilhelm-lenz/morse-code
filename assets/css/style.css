@@ -8,83 +8,100 @@
 * Font size system(px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
-* Font weights
-Default: 400
-
-* Line heights
-Default: 1
-
-! --- 02 COLORS
-
-- Primary: Primäre Farbe 
-- Tints (Farbtöne):
-- Shades (Schattierungen):
-- Accents:
-- Greys: #555 Beliebte Grau Töne
-
-! --- 05 SHADOWS
-
-! --- 06 BORDER-RADIUS
-
-! --- 07 WHITESPACE
 
 * Spacing System (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
-
 /* =================================== */
 /* FONTS */
 /* =================================== */
-
 @font-face {
   font-family: "";
   src: url();
 }
-
 /* =================================== */
 /* RESET STYLES */
 /* =================================== */
-
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
-
-:root {
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* ------------------------ */
 /* HELPER CLASSES */
 /* ------------------------ */
-
-.container{max-width: 1440px; margin: 0 auto;}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 5%;
+}
 
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
-
 html {
-/* 10px / 16px * 100% = 62,5% */
-/* Percentage of users browser font-size setting */
-font-size: 62.5%;
+  /* 10px / 16px * 100% = 62,5% */
+  /* Percentage of users browser font-size setting */
+  font-size: 62.5%;
 }
 
 body {
-font-family: sans-serif;
-line-height: 1;
-font-weight: 400;
-color: #555;
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: 100vh;
 }
 
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
+section {
+  width: 100%;
+}
 
-/* ------ HEADER ------ */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* ------ MAIN ------ */
+input:nth-of-type(1) {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-inline: 0.8rem;
+  padding-top: 0.8rem;
+  width: 40%;
+  border: 1px solid #f40a95;
+  border-radius: 0.8rem;
+}
 
-/* ------ FOOTER ------ */
+input:nth-of-type(2) {
+  margin-bottom: 4rem;
+  background-color: #f40a95;
+  border: none;
+  padding: 1.6rem;
+  font-size: 3rem;
+  border-radius: 1.6rem;
+  box-shadow: 5px 5px 10px lightgray;
+  cursor: pointer;
+}
+
+input:nth-of-type(2):hover {
+  background-color: rgba(244, 10, 149, 0.5019607843);
+}
+
+.output-wrapper {
+  font-size: 2rem;
+  border: 1px solid #f40a95;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
